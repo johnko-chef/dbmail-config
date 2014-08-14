@@ -26,7 +26,7 @@ set['dbmail']['enable_sieved'] = 'yes'
 set['dbmail']['dbmail']['dburi'] = 'sqlite:///var/tmp/dbmail.db'
 set['dbmail']['dbmail']['authdriver'] = '' # for DB
 set['dbmail']['dbmail']['sendmail'] = '/usr/local/sbin/sendmail'
-set['dbmail']['dbmail']['authlog']    = 'yes'
+set['dbmail']['dbmail']['authlog']  = 'yes'
 set['dbmail']['dbmail']['bindip'] = node['ipaddress']
 set['dbmail']['http']['bindip'] = node['ipaddress']
 
@@ -43,7 +43,7 @@ set['dbmail']['ldap']['hostname'] = 'ldap'
 default['dbmail']['ldap']['base_dn'] = 'ou=People,dc=mydomain,dc=com'
 default['dbmail']['ldap']['bind_dn'] = ''
 default['dbmail']['ldap']['bind_pw'] = ''
-default['dbmail']['ldap']['field_mail']= 'mail' # a comma-separated list of attributes to match when searching for users or forwards that match a delivery address. A match on any of them is a hit.
-default['dbmail']['ldap']['field_quota]'= 'mailQuota' # field that holds the mail-quota size for a user.
-default['dbmail']['ldap']['field_fwdtarget']= 'mailForwardingAddress' # field that holds the forwarding address.
+default['dbmail']['ldap']['field_mail'] = 'mail' # a comma-separated list of attributes to match when searching for users or forwards that match a delivery address. A match on any of them is a hit.
+default['dbmail']['ldap']['field_quota'] = 'mailQuota' # field that holds the mail-quota size for a user.
+default['dbmail']['ldap']['field_fwdtarget'] = 'mailForwardingAddress' # field that holds the forwarding address.
 #default['dbmail']['ldap']['query_string'] = '(mail=%s)' # override the query string used to search for users or forwards with a delivery address.
