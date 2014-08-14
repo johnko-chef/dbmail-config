@@ -18,4 +18,4 @@
 # limitations under the License.
 #
 
-# This page intentionally left blank
+include_recipe 'dbmail'
