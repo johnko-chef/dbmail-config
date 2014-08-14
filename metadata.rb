@@ -8,7 +8,6 @@ version          '0.1.0'
 
 recipe           'dbmail-config', 'Creates a /usr/local/etc/dbmail.conf'
 depends          'dbmail'
-depends          'svc'
 
 %w(freebsd).each do |os|
   supports os
